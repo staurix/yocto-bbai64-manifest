@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="oe" fetch="git://git.openembedded.org/"/>
+    <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
+    <remote name="qt5" fetch="https://github.com/meta-qt5/"/>
+    <remote name="clang" fetch="https://github.com/kraj"/>
+    <remote name="staurix" fetch="https://github.com/staurix"/>
+
+    <!-- Layers -->
+    <project name="meta-clang" path="layers/meta-clang" remote="clang" revision="scarthgap" />
+    <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" revision="scarthgap" />
+    <project name="openembedded-core" path="layers/openembedded-core" remote="oe" revision="scarthgap" />
+    <project name="meta-arago" path="layers/meta-arago" remote="yocto" revision="scarthgap" />
+    <project name="meta-ti" path="layers/meta-ti" remote="yocto" revision="scarthgap" />
+    <project name="meta-arm" path="layers/meta-arm" remote="yocto" revision="scarthgap" />
+    <project name="meta-qt5" path="layers/meta-qt5" remote="qt5" revision="scarthgap" />
+    <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="scarthgap" />
+    <project name="poky" path="layers/poky" remote="yocto" revision="scarthgap" />
+
+    <!-- Build configurations -->
+    <project name="yocto-bbai64-conf" path="builds" remote="staurix" revision="scarthgap" />
+</manifest>
